@@ -7,6 +7,7 @@ Para instalar el paquete debmirror
 
 TODA la configuración a utilizar contempla que el directorio donde se alojaran todos los mirrors de las distintas distribuciones será: 
 
+{{
 /home/mirrors/
 	     debian/
              debian-security/
@@ -14,3 +15,4 @@ TODA la configuración a utilizar contempla que el directorio donde se alojaran 
              trisquel/
  	     huayra/
              ubuntu/
+}}
