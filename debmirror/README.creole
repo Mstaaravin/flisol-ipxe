@@ -7,11 +7,91 @@ El server que se usará en Flisol CABA 2014 usará Debian GNU/Linux como SO, por
 TODA la configuración a utilizar contempla que el directorio donde se alojaran todos los mirrors de las distintas distribuciones será:
 
 {{{
+cmiranda@lhome:~/git/flisol-ipxe$ tree -d -L 3 /home/mirrors/
 /home/mirrors/
-	     debian/
-             linuxmint/
-             trisquel/
-             huayra/
-             centos/
-             ubuntu/
+├── centos
+│   └── 6.5
+│       ├── centosplus
+│       ├── contrib
+│       ├── cr
+│       ├── extras
+│       ├── fasttrack
+│       ├── isos
+│       ├── os
+│       ├── SCL
+│       ├── updates
+│       └── xen4
+├── debian
+│   ├── dists
+│   │   ├── jessie
+│   │   ├── jessie-updates
+│   │   ├── stable -> wheezy
+│   │   ├── stable-updates -> wheezy-updates
+│   │   ├── testing -> jessie
+│   │   ├── testing-updates -> jessie-updates
+│   │   ├── wheezy
+│   │   └── wheezy-updates
+│   ├── pool
+│   │   ├── contrib
+│   │   ├── main
+│   │   └── non-free
+│   └── project
+│       └── trace
+├── debian-security
+│   ├── dists
+│   │   ├── stable -> wheezy
+│   │   └── wheezy
+│   ├── pool
+│   │   └── updates
+│   └── project
+│       └── trace
+├── huayra
+│   ├── dists
+│   │   ├── mate-torbellino
+│   │   ├── torbellino
+│   │   └── unstable -> torbellino
+│   ├── pool
+│   │   ├── main
+│   │   └── non-free
+│   └── project
+│       └── trace
+├── linuxmint
+│   ├── dists
+│   │   └── petra
+│   ├── pool
+│   │   ├── import
+│   │   ├── main
+│   │   └── upstream
+│   └── project
+│       └── trace
+├── trisquel
+│   ├── dists
+│   │   ├── toutatis
+│   │   ├── toutatis-backports
+│   │   ├── toutatis-security
+│   │   └── toutatis-updates
+│   ├── pool
+│   │   └── main
+│   └── project
+│       └── trace
+└── ubuntu
+    ├── dists
+    │   ├── precise
+    │   ├── precise-backports
+    │   ├── precise-security
+    │   ├── precise-updates
+    │   ├── saucy
+    │   ├── saucy-backports
+    │   ├── saucy-security
+    │   └── saucy-updates
+    ├── pool
+    │   ├── main
+    │   ├── multiverse
+    │   ├── restricted
+    │   └── universe
+    └── project
+        └── trace
+
+82 directories
+
 }}}
