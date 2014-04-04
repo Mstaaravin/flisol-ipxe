@@ -6,7 +6,7 @@ El server que se usará en Flisol CABA 2014 usará Debian GNU/Linux como SO, por
 
 TODA la configuración a utilizar contempla que el directorio donde se alojaran todos los mirrors de las distintas distribuciones será:
 
-{{
+{{{
 /home/mirrors/
 	     debian/
              linuxmint/
@@ -14,4 +14,4 @@ TODA la configuración a utilizar contempla que el directorio donde se alojaran 
              huayra/
              centos/
              ubuntu/
-}}
+}}}
