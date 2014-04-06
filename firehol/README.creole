@@ -15,3 +15,30 @@ En sistemas Debian derivados, no deben olvidar habilitar el inicio de firehol
 	#To enable firehol at startup set START_FIREHOL=YES
 	START_FIREHOL=YES
 }}}
+
+
+== /etc/firehol/firehol.con ==
+{{{
+version 5
+ 
+# configuracion proxy transparente
+transparent_squid 3128 "root proxy" inface "eth1 src 192.168.122.0/24"
+
+interface eth0 internet
+      client all accept
+ 
+interface eth1 lan
+     policy accept
+     server all accept
+     client all accept
+ 
+
+router internet2lan inface eth0 outface eth1
+        masquerade
+        route all accept
+
+router lan2internet inface eth1 outface eth0
+       masquerade
+       route all accept
+ 
+}}}
