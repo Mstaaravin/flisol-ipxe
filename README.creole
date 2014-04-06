@@ -25,8 +25,8 @@ La configuración contempla que:
 ** /home/mirrors (mirrors de las distribuciones)
 * El segmente de IP privada a utilizar en la LAN el día del evento será 192.168.122.0/24
 * El server tendrá 2 interfaces de red
-** eth0 de cara hacia internet cumpliendo la función de interfaz WAN
-** eth1 de cara hacia la red privada cumpliendo la función de interfaz LAN
+** eth0 hacia internet cumpliendo la función de interfaz WAN
+** eth1 hacia la red privada cumpliendo la función de interfaz LAN
 * Para simplificar la configuración de iptables y nivelar los conocimientos de los distintos admins en las sedes de Flisol, decidí usar firehol [1] Aunque pueden usar lo que deseen (iptabled, shorewall, etc)
 * dnsmasq: cumplirá las funciones de DHCP, DNS Server y TFTP server
 ** DHCP en el rango 192.168.122.0/24
