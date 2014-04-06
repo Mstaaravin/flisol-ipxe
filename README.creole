@@ -14,10 +14,15 @@ Contiene la configuración de los siguientes programas
 
 * squid
 
+* nfs-server
+
 
 
 La configuración contempla que:
 
+* La estructura de directorios será:
+** /home/tftp (configuración y boot PXE)
+** /home/mirrors (mirrors de las distribuciones)
 * El segmente de IP privada a utilizar en la LAN el día del evento será 192.168.122.0/24
 * El server tendrá 2 interfaces de red
 ** eth0 de cara hacia internet cumpliendo la función de interfaz WAN
@@ -30,7 +35,9 @@ La configuración contempla que:
 * debmirror: con debmirror haremos una copia local completa de los repositorios de LinuxMint, Debian, Ubuntu, Huayra, etc.
 * nginx: será el encargado de servir todos los paquetes de los mirrors y algunos que se necesitan para el booteo PXE
 * squid: proxy caché para tráfico http
-* En mi blog personal hay un post que explica cómo probar esta configuración virtualizando con kvm + libvirt [2]
+* nfs-server: se encargará de publicar x NFS algunas imágenes/archivos necesarios para el boot de los LiveCDs
+
+* En mi blog personal hay un post que explica cómo probar esta configuración virtualizando con kvm + libvirt [2] también pueden contactarme mediante Twitter: @mstaaravin o email: mstaaravin@gmail.com
 
 [1] http://firehol.sourceforge.net
 
