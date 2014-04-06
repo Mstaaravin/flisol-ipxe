@@ -22,7 +22,7 @@ La configuración contempla que:
 * El server tendrá 2 interfaces de red
 ** eth0 de cara hacia internet cumpliendo la función de interfaz WAN
 ** eth1 de cara hacia la red privada cumpliendo la función de interfaz LAN
-* Para simplificar la configuración de iptables y nivelar los conocimientos de los distintos admins en las sedes de Flisol, decidí usar firehol [1] Aunque pueden usar lo que deseen.
+* Para simplificar la configuración de iptables y nivelar los conocimientos de los distintos admins en las sedes de Flisol, decidí usar firehol [1] Aunque pueden usar lo que deseen (iptabled, shorewall, etc)
 * dnsmasq: cumplirá las funciones de DHCP, DNS Server y TFTP server
 ** DHCP en el rango 192.168.122.0/24
 ** DNS Server para resolver dominios como ftp.debian.org a la IP privada del server
@@ -30,9 +30,10 @@ La configuración contempla que:
 * debmirror: con debmirror haremos una copia local completa de los repositorios de LinuxMint, Debian, Ubuntu, Huayra, etc.
 * nginx: será el encargado de servir todos los paquetes de los mirrors y algunos que se necesitan para el booteo PXE
 * squid: proxy caché para tráfico http
-
+* En mi blog personal hay un post que explica cómo probar esta configuración virtualizando con kvm + libvirt [2]
 
 [1] http://firehol.sourceforge.net
+[2] http://url.ngen.com.ar/1lIQY7h
 
 
 
