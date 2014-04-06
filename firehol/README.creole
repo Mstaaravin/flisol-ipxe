@@ -17,7 +17,7 @@ En sistemas Debian derivados, no deben olvidar habilitar el inicio de firehol
 }}}
 
 
-== /etc/firehol/firehol.con ==
+==== /etc/firehol/firehol.con ====
 {{{
 version 5
  
