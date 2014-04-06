@@ -1,17 +1,5 @@
 #!/bin/sh
 
-# Don't touch the user's keyring, have our own instead
-# export GNUPGHOME=/home/cmiranda/.keyrings
-#		--no-check-gpg \
-#		--ignore-release-gpg \
-#		--ignore-release-gpg \
-#		--getcontents \
-#		--diff=use \
-#		--i18n \
-#		--exclude='/Translation-.*\.bz2$' \
-#		--include='/Translation-en.*\.bz2$' \
-#		--include='/Translation-es.*\.bz2$' \
-
 # Architecture (i386, powerpc, amd64, etc.)
 arch=i386,amd64
 

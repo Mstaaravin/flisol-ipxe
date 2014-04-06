@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Don't touch the user's keyring, have our own instead
-# export GNUPGHOME=/home/cmiranda/.keyrings
-
 # Architecture (i386, powerpc, amd64, etc.)
 arch=i386,amd64
 

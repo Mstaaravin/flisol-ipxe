@@ -1,10 +1,5 @@
 #!/bin/sh
 
-# Don't touch the user's keyring, have our own instead
-# export GNUPGHOME=/home/cmiranda/.keyrings
-#		--no-check-gpg \
-#		--ignore-release-gpg \
-
 # Architecture (i386, powerpc, amd64, etc.)
 arch=i386,amd64
 

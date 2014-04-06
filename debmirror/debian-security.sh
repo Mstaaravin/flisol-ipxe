@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Don't touch the user's keyring, have our own instead
-# export GNUPGHOME=/home/cmiranda/keyrings/debian
-
 # Architecture (i386, powerpc, amd64, etc.)
 arch=i386,amd64
 
@@ -34,6 +31,7 @@ debmirror	-a $arch \
 		--getcontents \
 		--dif=mirror \
 		--no-check-gpg \
+		--ignore-release-gpg \
 		-s $section \
 		-h $server \
 		-d $release \
