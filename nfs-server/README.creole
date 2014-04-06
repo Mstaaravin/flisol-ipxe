@@ -4,7 +4,7 @@ El server utilizará NFS para publicar los distintos directorios que se necesita
 
 ==== Instalación ====
 {{{
-	:~# nfs-kernel-server
+	:~# aptitude install nfs-kernel-server
 }}}
 
 
