@@ -1,0 +1,60 @@
+menu title Flisol iPXE Server
+prompt 0
+timeout 300
+default vesamenu.c32
+menu background splash.png
+menu rows 13
+# noescape 1
+
+MENU COLOR TITLE 0              #ffffffff #00000000 none
+MENU COLOR SEL   30;47          #99ffffff #15ffffff none
+
+menu SEPARATOR
+
+menu begin Installers
+menu title Installers
+        label Previous
+        menu label Previous menu
+	text help
+       	Return to previous menu
+        endtext
+        menu exit
+        menu separator
+        menu include pxelinux.cfg/installers.conf
+menu end
+
+menu SEPARATOR
+
+menu begin Live CDs
+menu title Live CDs
+        label Previous
+        menu label Previous menu
+        text help
+        Return to previous menu
+        endtext
+        menu exit
+        menu separator
+        menu include pxelinux.cfg/live.conf
+menu end
+
+
+menu SEPARATOR
+
+menu begin Utilities
+menu title Utilities
+        label Previous
+        menu label Previous menu
+        text help
+        Return to previous menu
+        endtext
+        menu exit
+        menu separator
+        menu include pxelinux.cfg/utilities.conf
+menu end
+
+menu SEPARATOR
+menu SEPARATOR
+
+label localboot
+        menu label Localboot (Hard Disk)
+        localboot 0
