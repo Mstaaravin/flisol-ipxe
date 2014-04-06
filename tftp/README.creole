@@ -37,6 +37,15 @@ Debian es realmente simple en su estructura de instalación, para este caso crea
 	    └── i386
 }}}
 
+Descargamos el kernel y el initrd
+
+{{{
+	cmiranda@lhome:~$ wget -P /home/tftp/boot/debian/wheezy/amd64/ http://mirrors.kernel.org/debian/dists/wheezy/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux
+	cmiranda@lhome:~$ wget -P /home/tftp/boot/debian/wheezy/amd64/ http://mirrors.kernel.org/debian/dists/wheezy/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz
+}}}
+
+Deben hacer lo mismo para el resto de las arquitecturas (i386, etc) y versiones (jessie, etc)\\
+Para el LiveCD de Debian deben usar como ejemplo el procedimiento de LinuxMint (a continuación)
 
 ===== LinuxMint (LiveCD) =====
 LinuxMint por ejemplo consta de la siguiente estructura de directorios
@@ -60,7 +69,8 @@ La cual fue previamente creada:
 	cmiranda@lhome:~$ mkdir -p /home/boot/linuxmint/{cinnamon32,cinnamon64,mate32,mate64,xfce32,xfce64}
 }}}
 
-Se entiende que cinnamon64 corresponde al CD con Cinnamon de 64bits (LinuxMint tiene un CD/DVD específico para cada desktop); Bajamos los *.iso correspondientes
+Se entiende que cinnamon64 corresponde al CD con Cinnamon de 64bits (LinuxMint tiene un CD/DVD específico para cada desktop); Bajamos los *.iso correspondientes\\
+Descargaremos el iso correspondiente, hacemos mount y copiamos el contenido completo al directorio destino y hacemos lo mismo para cada versión de LinuxMint que necesitemos bootear por PXE
 
 {{{
 	cmiranda@lhome:~$ wget http://mirrors.kernel.org/linuxmint/stable/16/linuxmint-16-cinnamon-dvd-64bit.iso
