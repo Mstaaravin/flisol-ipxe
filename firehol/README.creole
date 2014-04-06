@@ -1,0 +1,18 @@
+Firehol
+
+Firehol es un simple wrapper para iptables que nos permite configurar fácilmente un muy simple o complejo firewall.
+Se instalar mediante:
+
+{{{
+	:~# aptitude install firehol
+}}}
+
+
+En este ejemplo el archivo .conf incluido aqui debe reemplazar al original en /etc/firehol/firehol.conf es muy simple de interpretar y es autoexplicativo.
+
+En sistemas Debian derivados, no deben olvidar habilitar el inicio de firehol
+
+{{{
+	#To enable firehol at startup set START_FIREHOL=YES
+	START_FIREHOL=YES
+}}}
