@@ -33,6 +33,7 @@ La configuración contempla que:
 * En mi blog personal hay un post que explica cómo probar esta configuración virtualizando con kvm + libvirt [2]
 
 [1] http://firehol.sourceforge.net
+
 [2] http://url.ngen.com.ar/1lIQY7h
 
 
