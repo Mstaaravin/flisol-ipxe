@@ -1,5 +1,13 @@
 #!/bin/sh
 
+# Don't touch the user's keyring, have our own instead
+# export GNUPGHOME=/home/cmiranda/.keyrings
+#		--no-check-gpg \
+#		--ignore-release-gpg \
+#		--ignore-release-gpg \
+#		--di-dist=wheezy,wheezy-updates,jessie,jessie-updates \
+#		--di-arch=i386,amd64 \
+
 # Architecture (i386, powerpc, amd64, etc.)
 arch=i386,amd64
 
@@ -29,13 +37,11 @@ debmirror	-a $arch \
 		--getcontents \
 		--diff=use \
 		-i18n \
-		--no-check-gpg \
-		--ignore-release-gpg \
+                --di-dist=wheezy,wheezy-updates,jessie,jessie-updates \
+                --di-arch=i386,amd64 \
 		--exclude='/Translation-.*\.bz2$' \
 		--include='/Translation-en.*\.bz2$' \
 		--include='/Translation-es.*\.bz2$' \
-		--di-dist=wheezy,wheezy-updates,jessie,jessie-updates \
-		--di-arch=i386,amd64 \
 		-s $section \
 		-h $server \
 		-d $release \

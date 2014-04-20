@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Don't touch the user's keyring, have our own instead
+# export GNUPGHOME=/home/cmiranda/keyrings/debian
+
 # Architecture (i386, powerpc, amd64, etc.)
 arch=i386,amd64
 
@@ -7,7 +10,7 @@ arch=i386,amd64
 section=main,contrib,non-free
 
 # Release of the system (squeeze,lenny,stable,testing,etc)
-release=wheezy/updates
+release=wheezy/updates,jessie/updates
 
 # Server name, minus the protocol and the path at the end
 # server=ftp.debian.org
@@ -31,7 +34,6 @@ debmirror	-a $arch \
 		--getcontents \
 		--dif=mirror \
 		--no-check-gpg \
-		--ignore-release-gpg \
 		-s $section \
 		-h $server \
 		-d $release \
