@@ -33,3 +33,14 @@ También deber hacer un link simbólico a /home/tftp para los archivos que se ne
 }}}
 
 
+----
+Proxy Reverso
+
+En el caso de NO disponer de un mirror local para la instalación de paquetes de una determinada distribución y se necesiten descargar desde internet, se puede utilizar nginx en modo Proxy Reverso para optimizar el bandwith
+
+Ejemplo en el caso de Fedora distribución de la que NO tenemos mirror en Flisol CABA
+
+.... (falta)
+
+
+
