@@ -37,6 +37,8 @@ debmirror	-a $arch \
 		--getcontents \
 		--diff=use \
 		-i18n \
+		--no-check-gpg \
+		--ignore-release-gpg \
                 --di-dist=wheezy,wheezy-updates,jessie,jessie-updates \
                 --di-arch=i386,amd64 \
 		--exclude='/Translation-.*\.bz2$' \

@@ -34,6 +34,7 @@ debmirror	-a $arch \
 		--getcontents \
 		--dif=mirror \
 		--no-check-gpg \
+		--ignore-release-gpg \
 		-s $section \
 		-h $server \
 		-d $release \
