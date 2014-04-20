@@ -5,7 +5,7 @@ dnsmasq es un excelente software, muy simple y que nos permite disponer de 3 ser
 Se instala en Debian con:
 
 {{{
-	:~# aptitude install dnsmasq
+:~# aptitude install dnsmasq
 }}}
 
 * DHCP obviamente se encargará de asignar las IPs en nuestra LAN
