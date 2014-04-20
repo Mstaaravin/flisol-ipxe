@@ -19,6 +19,8 @@ El archivo /etc/dnsmasq.conf es autoexplicativo y así como está AMMA (a mi me 
 Una de las funcionalidades de DNSMASQ es funcionar como split-horizon por lo que podemos simular que determinado host en internet se corresponde con la IP privada del server.
 Para eso se utiliza la linea {{{addn-hosts=/etc/banner_add_hosts}}} donde especificaremos qué dominios van a apuntar a la IP 192.168.122.1 que es donde escuchará nginx
 
+Es importante que durante la instalación de las distribuciones se seleccione Argentina como pais, en el caso de ubuntu automáticamente agregar {{{ar.archive.ubuntu.com}}} al {{{/etc/apt/sources.list}}}
+
 === /etc/banner_add_hosts ===
 
 {{{
