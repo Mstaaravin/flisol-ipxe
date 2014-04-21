@@ -4,7 +4,7 @@ Firehol es un simple wrapper para iptables que nos permite configurar fácilment
 Se instala mediante:
 
 {{{
-	:~# aptitude install firehol
+:~# aptitude install firehol
 }}}
 
 En este ejemplo el archivo .conf incluido aqui debe reemplazar al original en /etc/firehol/firehol.conf es muy simple de interpretar y es autoexplicativo.
@@ -12,8 +12,9 @@ En este ejemplo el archivo .conf incluido aqui debe reemplazar al original en /e
 En sistemas Debian derivados, no deben olvidar habilitar el inicio de firehol
 
 {{{
-	#To enable firehol at startup set START_FIREHOL=YES
-	START_FIREHOL=YES
+#To enable firehol at startup set START_FIREHOL=YES
+START_FIREHOL=YES
+FIREHOL_LOG_MODE=ULOG
 }}}
 
 
