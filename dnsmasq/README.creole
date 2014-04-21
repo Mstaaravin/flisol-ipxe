@@ -15,13 +15,12 @@ Se instala en Debian con:
 
 El archivo /etc/dnsmasq.conf es autoexplicativo y así como está AMMA (a mi me anda)
 
-==== DNS local  ====
+
+=== /etc/banner_add_hosts ===
 Una de las funcionalidades de DNSMASQ es funcionar como split-horizon por lo que podemos simular que determinado host en internet se corresponde con la IP privada del server.
 Para eso se utiliza la linea {{{addn-hosts=/etc/banner_add_hosts}}} donde especificaremos qué dominios van a apuntar a la IP 192.168.122.1 que es donde escuchará nginx
 
-Es importante que durante la instalación de las distribuciones se seleccione Argentina como pais, en el caso de ubuntu automáticamente agregar {{{ar.archive.ubuntu.com}}} al {{{/etc/apt/sources.list}}}
-
-=== /etc/banner_add_hosts ===
+Es importante que durante la instalación de las distribuciones se seleccione Argentina como pais, en el caso de ubuntu automáticamente agrega {{{ar.archive.ubuntu.com}}} al {{{/etc/apt/sources.list}}}
 
 {{{
 192.168.122.1 ar.archive.ubuntu.com
@@ -58,9 +57,9 @@ dhcp-range=192.168.122.10,192.168.122.254,255.255.255.0,96h
 dhcp-option=option:router,192.168.122.1
 dhcp-option=option:dns-server,192.168.122.1
 
-dhcp-boot=pxelinux.0
 enable-tftp
 tftp-root=/home/tftp
+dhcp-boot=pxelinux.0
 
 dhcp-leasefile=/var/lib/misc/dnsmasq.leases
 
