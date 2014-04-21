@@ -78,6 +78,21 @@ cmiranda@lhome:~$ sudo mount linuxmint-16-cinnamon-dvd-64bit.iso /mnt
 cmiranda@lhome:~$ rsync -avr /mnt/ /home/tftp/boot/linuxmint/cinnamon64/
 }}}
 
+
+===== Fedora (Install DVD) =====
+Se deben crear los siguientes directorios
+{{{
+mkdir -p /home/tftp/boot/fedora/20/{x86_64,i386}
+}}}
+
+Se debe bajar los siguientes archivos:
+{{{
+wget -P /home/tftp/boot/fedora/20/x86_64/ http://fedora.mirror.nexicom.net/linux/releases/20/Fedora/x86_64/os/isolinux/vmlinuz
+wget -P /home/tftp/boot/fedora/20/x86_64/ http://fedora.mirror.nexicom.net/linux/releases/20/Fedora/x86_64/os/isolinux/initrd.img
+wget -P /home/tftp/boot/fedora/20/i386/ http://fedora.mirror.nexicom.net/linux/releases/20/Fedora/i386/os/isolinux/vmlinuz
+wget -P /home/tftp/boot/fedora/20/i386/ http://fedora.mirror.nexicom.net/linux/releases/20/Fedora/i386/os/isolinux/initrd.img
+}}}
+
 Deben respetar todos los paths ya que estos se utilizan desde el archivo {{{/home/tftp/pxelinux.cfg/installers.conf}}}
 
 
