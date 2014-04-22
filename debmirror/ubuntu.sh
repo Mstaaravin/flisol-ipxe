@@ -36,7 +36,6 @@ debmirror	-a $arch \
                 --include='/Translation-en.*\.bz2$' \
                 --include='/Translation-es.*\.bz2$' \
                 --di-dist=precise,precise-updates,saucy,saucy-updates,trusty,trusty-updates \
-                --di-arch=i386,amd64 \
 		-s $section \
 		-h $server \
 		-d $release \
