@@ -7,7 +7,7 @@
 arch=i386,amd64
 
 # Section (main,contrib,non-free)
-section=main,main/debian-installer,main/installer-amd64,main/installer-i386,multiverse,multiverse/debian-installer,universe,universe/debian-installer,restricted,restricted/debian-installer
+section=main,main/debian-installer,multiverse,multiverse/debian-installer,universe,universe/debian-installer,restricted,restricted/debian-installer
 
 # Release of the system (squeeze,lenny,stable,testing,etc)
 release=precise,precise-security,precise-updates,precise-backports,saucy,saucy-security,saucy-updates,saucy-backports,trusty,trusty-security,trusty-updates,trusty-backports
