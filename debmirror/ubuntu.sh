@@ -35,7 +35,6 @@ debmirror	-a $arch \
                 --exclude='/Translation-.*\.bz2$' \
                 --include='/Translation-en.*\.bz2$' \
                 --include='/Translation-es.*\.bz2$' \
-                --di-dist=precise,precise-updates,saucy,saucy-updates,trusty,trusty-updates \
 		-s $section \
 		-h $server \
 		-d $release \
