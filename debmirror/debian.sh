@@ -15,7 +15,7 @@ arch=i386,amd64
 section=main,main/debian-installer,contrib,contrib/debian-installer,non-free,non-free/debian-installer
 
 # Release of the system (wheezy,jessie,stable,testing,etc)
-release=wheezy,wheezy-updates,jessie,jessie-updates
+release=jessie,jessie-updates
 
 # Server name, minus the protocol and the path at the end
 server=mirrors.kernel.org
@@ -39,7 +39,7 @@ debmirror	-a $arch \
 		-i18n \
 		--no-check-gpg \
 		--ignore-release-gpg \
-                --di-dist=wheezy,wheezy-updates,jessie,jessie-updates \
+                --di-dist=jessie,jessie-updates \
                 --di-arch=i386,amd64 \
 		--exclude='/Translation-.*\.bz2$' \
 		--include='/Translation-en.*\.bz2$' \

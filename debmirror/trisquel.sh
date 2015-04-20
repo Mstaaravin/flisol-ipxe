@@ -12,7 +12,7 @@ arch=i386,amd64
 section=main,main/debian-installer,extras,extras/debian-installer
 
 # Release of the system (wheezy,jessie,stable,testing,etc)
-release=toutatis,toutatis-backports,toutatis-security,toutatis-updates
+release=belenos,belenos-backports,belenos-security,belenos-updates
 
 # Server name, minus the protocol and the path at the end
 server=us.archive.trisquel.info

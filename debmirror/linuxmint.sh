@@ -12,7 +12,7 @@ arch=i386,amd64
 section=main,multiverse,universe,upstream,upstream/debian-installer,backport,import,incoming,romeo,romeo/debian-installer
 
 # Release of the system (wheezy,jessie,stable,testing,etc)
-release=petra
+release=rebecca
 
 # Server name, minus the protocol and the path at the end
 server=mirrors.kernel.org

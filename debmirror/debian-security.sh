@@ -10,7 +10,7 @@ arch=i386,amd64
 section=main,contrib,non-free
 
 # Release of the system (squeeze,lenny,stable,testing,etc)
-release=wheezy/updates,jessie/updates
+release=jessie/updates
 
 # Server name, minus the protocol and the path at the end
 # server=ftp.debian.org

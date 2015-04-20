@@ -10,7 +10,7 @@ arch=i386,amd64
 section=main,main/debian-installer,multiverse,multiverse/debian-installer,universe,universe/debian-installer,restricted,restricted/debian-installer
 
 # Release of the system (squeeze,lenny,stable,testing,etc)
-release=precise,precise-security,precise-updates,precise-backports,saucy,saucy-security,saucy-updates,saucy-backports,trusty,trusty-security,trusty-updates,trusty-backports
+release=trusty,trusty-security,trusty-updates,trusty-backports
 
 # Server name, minus the protocol and the path at the end
 server=mirrors.kernel.org

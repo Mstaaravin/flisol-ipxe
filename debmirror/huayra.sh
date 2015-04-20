@@ -19,13 +19,13 @@ arch=i386,amd64
 section=main,main/debian-installer,contrib,contrib/debian-installer,non-free,non-free/debian-installer
 
 # Release of the system (wheezy,jessie,stable,testing,etc)
-release=torbellino,mate-torbellino
+release=sud,sud-proposed,sud-updates
 
 # Server name, minus the protocol and the path at the end
 server=repo.huayra.conectarigualdad.gob.ar
 
 # Path from the main server, so http://my.web.server/$dir, Server dependant
-inPath=/huayra-repo
+inPath=/huayra
 
 # Protocol to use for transfer (http, ftp, hftp, rsync)
 proto=rsync
