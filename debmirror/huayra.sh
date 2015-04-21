@@ -25,7 +25,7 @@ release=sud,sud-proposed,sud-updates
 server=repo.huayra.conectarigualdad.gob.ar
 
 # Path from the main server, so http://my.web.server/$dir, Server dependant
-inPath=/huayra
+inPath=/huayra-repo
 
 # Protocol to use for transfer (http, ftp, hftp, rsync)
 proto=rsync
