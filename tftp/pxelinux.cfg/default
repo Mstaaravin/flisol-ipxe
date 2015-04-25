@@ -27,7 +27,7 @@ menu SEPARATOR
 
 menu begin Live CDs
 menu title Live CDs
-        label Previous
+       label Previous
         menu label Previous menu
         text help
         Return to previous menu
