@@ -1,21 +1,13 @@
 #!/bin/sh
 
-# Don't touch the user's keyring, have our own instead
-# export GNUPGHOME=/home/cmiranda/.keyrings
-#		--no-check-gpg \
-#		--ignore-release-gpg \
-#		--ignore-release-gpg \
-#		--di-dist=wheezy,wheezy-updates,jessie,jessie-updates \
-#		--di-arch=i386,amd64 \
-
 # Architecture (i386, powerpc, amd64, etc.)
 arch=i386,amd64
 
 # Section (main,contrib,non-free)
-section=main,main/debian-installer,contrib,contrib/debian-installer,non-free,non-free/debian-installer
+section=main,main/debian-installer,contrib,contrib/debian-installer,non-free,non-free/debian-installer,
 
 # Release of the system (wheezy,jessie,stable,testing,etc)
-release=jessie,jessie-updates
+release=jessie,jessie-updates,jessie-proposed-updates
 
 # Server name, minus the protocol and the path at the end
 server=mirrors.kernel.org
@@ -27,7 +19,7 @@ inPath=/debian
 proto=http
 
 # Directory to store the mirror in
-outPath=/home/mirrors/debian
+outPath=/flisol/mirrors/debian
 
 # Start script
 debmirror	-a $arch \
@@ -39,7 +31,7 @@ debmirror	-a $arch \
 		-i18n \
 		--no-check-gpg \
 		--ignore-release-gpg \
-                --di-dist=jessie,jessie-updates \
+                --di-dist=jessie \
                 --di-arch=i386,amd64 \
 		--exclude='/Translation-.*\.bz2$' \
 		--include='/Translation-en.*\.bz2$' \

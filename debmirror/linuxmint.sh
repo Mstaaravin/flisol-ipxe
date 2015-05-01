@@ -1,15 +1,10 @@
 #!/bin/sh
 
-# Don't touch the user's keyring, have our own instead
-# export GNUPGHOME=/home/cmiranda/.keyrings
-#		--no-check-gpg \
-#		--ignore-release-gpg \
-
 # Architecture (i386, powerpc, amd64, etc.)
 arch=i386,amd64
 
 # Section (main,contrib,non-free)
-section=main,multiverse,universe,upstream,upstream/debian-installer,backport,import,incoming,romeo,romeo/debian-installer
+section=main,multiverse,universe,upstream,upstream/debian-installer,backport,import,romeo,romeo/debian-installer
 
 # Release of the system (wheezy,jessie,stable,testing,etc)
 release=rebecca
