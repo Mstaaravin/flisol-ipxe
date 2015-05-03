@@ -4,10 +4,10 @@
 arch=i386,amd64
 
 # Section (main,contrib,non-free)
-section=main,main/debian-installer,contrib,contrib/debian-installer,non-free,non-free/debian-installer,
+section=main,main/debian-installer,contrib,contrib/debian-installer,non-free,non-free/debian-installer
 
 # Release of the system (wheezy,jessie,stable,testing,etc)
-release=jessie,jessie-updates,jessie-proposed-updates
+release=jessie,jessie-backports,jessie-updates,jessie-proposed-updates
 
 # Server name, minus the protocol and the path at the end
 server=mirrors.kernel.org
@@ -27,7 +27,8 @@ debmirror	-a $arch \
 		--md5sums \
 		--verbose \
 		--getcontents \
-		--diff=use \
+		--diff=mirror \
+		--ignore-small-errors \
 		-i18n \
 		--no-check-gpg \
 		--ignore-release-gpg \

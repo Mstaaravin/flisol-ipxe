@@ -19,7 +19,7 @@ inPath=/linuxmint-packages
 proto=http
 
 # Directory to store the mirror in
-outPath=/home/mirrors/linuxmint
+outPath=/flisol/mirrors/linuxmint
 
 # Start script
 debmirror       -a $arch \
