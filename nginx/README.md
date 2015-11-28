@@ -1,4 +1,4 @@
-=== Nginx ===
+# Nginx 
 
 Nginx cumple varias funciones en este mirror (también se puede usar Apache)
 
@@ -8,9 +8,8 @@ Nginx cumple varias funciones en este mirror (también se puede usar Apache)
 
 Se instala en Debian con:
 
-{{{
-:~# aptitude install nginx
-}}}
+    :~# aptitude install nginx
+
 
 La configuración como viene por default (/etc/nginx/sites-available/default) no se toca en lo absoluto, por ese motivo no pongo la config (no es necesaria) aunque hay que tener en consideración algunos puntos importantes
 
@@ -20,27 +19,21 @@ La configuración como viene por default (/etc/nginx/sites-available/default) no
 
 Por lo que si queremos publicar el contenido de los diferentes mirrors en /home/mirrors con usar un link simbólico a /usr/share/nginx/www es suficiente
 
-{{{
-:~# ln -s /home/mirrors/{debian,debian-security,ubuntu,centos,trisquel,linuxmint,} /usr/share/nginx/www
-}}}
+    :~# ln -s /home/mirrors/{debian,debian-security,ubuntu,centos,trisquel,linuxmint,} /usr/share/nginx/www
+
 
 O hacia /var/www si deciden usar Apache
 
 También deber hacer un link simbólico a /home/tftp para los archivos que se necesiten en el booteo PXE
 
-{{{
-:~# ln -s /home/tftp /usr/share/nginx/www
-}}}
+    :~# ln -s /home/tftp /usr/share/nginx/www
 
 
-----
-Proxy Reverso
+>Proxy Reverso
 
-En el caso de NO disponer de un mirror local para la instalación de paquetes de una determinada distribución y se necesiten descargar desde internet, se puede utilizar nginx en modo Proxy Reverso para optimizar el bandwith
+>En el caso de NO disponer de un mirror local para la instalación de paquetes de una determinada distribución y se necesiten descargar desde internet, se puede utilizar nginx en modo Proxy Reverso para optimizar el bandwith
 
-Ejemplo en el caso de Fedora distribución de la que NO tenemos mirror en Flisol CABA
+>Ejemplo en el caso de Fedora distribución de la que NO tenemos mirror en Flisol CABA
 
 .... (falta)
-
-
 
