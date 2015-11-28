@@ -1,2 +1,2 @@
-rsync -aqzH --delete rsync://mirror.nexicom.net/Fedora/releases/20/Fedora/i386/os/ /home/mirrors/fedora/20/os/i386/
-rsync -aqzH --delete rsync://mirror.nexicom.net/Fedora/releases/20/Fedora/x86_64/os/ /home/mirrors/fedora/20/os/x86_64/
+rsync -aqzH --delete rsync://mirror.chpc.utah.edu/pub/fedora/linux/releases/23/Workstation/i386/os/ /home/mirrors/fedora/23/os/i386/
+rsync -aqzH --delete rsync://mirror.chpc.utah.edu/pub/fedora/linux/releases/23/Workstation/x86_64/os/ /home/mirrors/fedora/23/os/x86_64/
